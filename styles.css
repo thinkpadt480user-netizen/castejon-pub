@@ -1,12 +1,12 @@
-:root {
-  --bosque: #0f3d2e;
-  --bosque-oscuro: #092a20;
-  --brasa: #c8320e;
-  --brasa-viva: #d93a12;
-  --mostaza: #ffc62e;
-  --yogur: #f5f7ee;
-  --menta: #dfe9d6;
-  --tinta: #13261d;
+﻿:root {
+  --bosque: #2b1810;
+  --bosque-oscuro: #1a0e09;
+  --brasa: #8e1f1f;
+  --brasa-viva: #a82a22;
+  --mostaza: #e0a030;
+  --yogur: #f6efe2;
+  --menta: #eadcc2;
+  --tinta: #24150f;
 
   --fuente-titulos: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
   --fuente-texto: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -180,14 +180,14 @@ h3 { font-weight: 800; font-size: 1.5rem; }
   color: var(--tinta);
   flex: 1 1 14rem;
 }
-.boton--llamar:hover { background: #ffd45c; }
+.boton--llamar:hover { background: #ecb54e; }
 
 .boton--mapa {
   border-color: var(--yogur);
   color: var(--yogur);
   flex: 1 1 9rem;
 }
-.boton--mapa:hover { background: rgba(245, 247, 238, 0.12); }
+.boton--mapa:hover { background: rgba(246, 239, 226, 0.12); }
 
 .boton--mapa-oscuro {
   background: var(--bosque);
@@ -231,7 +231,7 @@ h3 { font-weight: 800; font-size: 1.5rem; }
   line-height: 1;
 }
 .estrellas--grande { font-size: 1.9rem; }
-.estrellas__fondo { color: rgba(128, 140, 120, 0.45); }
+.estrellas__fondo { color: rgba(140, 120, 100, 0.45); }
 .estrellas__relleno {
   position: absolute;
   inset: 0 auto 0 0;
@@ -240,9 +240,9 @@ h3 { font-weight: 800; font-size: 1.5rem; }
   white-space: nowrap;
   color: var(--mostaza);
 }
-.opiniones .estrellas__relleno { color: #e8a800; }
+.opiniones .estrellas__relleno { color: #e0a030; }
 
-.intro { max-width: 34rem; margin: 0.9rem 0 0; color: #3b4a42; }
+.intro { max-width: 34rem; margin: 0.9rem 0 0; color: #4e3b30; }
 
 .carta__rejilla {
   display: grid;
@@ -273,14 +273,14 @@ h3 { font-weight: 800; font-size: 1.5rem; }
   display: block;
   font-weight: 400;
   font-size: 0.9rem;
-  color: #3b4a42;
+  color: #4e3b30;
 }
 
 .platos li::after {
   content: "";
   order: 1;
   flex: 1 1 1rem;
-  border-bottom: 2px dotted rgba(19, 38, 29, 0.35);
+  border-bottom: 2px dotted rgba(36, 21, 15, 0.35);
   transform: translateY(-0.3em);
   min-width: 1rem;
 }
@@ -292,10 +292,10 @@ h3 { font-weight: 800; font-size: 1.5rem; }
   padding-inline: 0.75rem;
   border-radius: 0.6rem;
 }
-.platos .estrella::after { border-bottom-color: rgba(19, 38, 29, 0.5); }
+.platos .estrella::after { border-bottom-color: rgba(36, 21, 15, 0.5); }
 .platos .estrella small { color: var(--tinta); }
 
-.nota { margin: 0.5rem 0 0; font-size: 0.95rem; color: #3b4a42; }
+.nota { margin: 0.5rem 0 0; font-size: 0.95rem; color: #4e3b30; }
 
 .pedir {
   margin: 3rem 0 0;
@@ -364,7 +364,7 @@ h3 { font-weight: 800; font-size: 1.5rem; }
   letter-spacing: -0.04em;
   color: var(--mostaza);
 }
-.opiniones .estrellas__fondo { color: rgba(245, 247, 238, 0.3); }
+.opiniones .estrellas__fondo { color: rgba(246, 239, 226, 0.3); }
 .opiniones .estrellas__relleno { color: var(--mostaza); }
 
 .resenas {
@@ -406,13 +406,13 @@ h3 { font-weight: 800; font-size: 1.5rem; }
 .horario th, .horario td {
   text-align: left;
   padding: 0.4rem 0;
-  border-bottom: 1px solid rgba(19, 38, 29, 0.2);
+  border-bottom: 1px solid rgba(36, 21, 15, 0.2);
   font-weight: 500;
 }
 .horario td { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
 
 address { font-style: normal; }
-.pluscode { color: #3b4a42; font-size: 0.95rem; }
+.pluscode { color: #4e3b30; font-size: 0.95rem; }
 
 .tel-grande {
   font-family: var(--fuente-titulos);
@@ -492,3 +492,4 @@ address { font-style: normal; }
 .carta__foto img { display: block; width: 100%; height: auto; border-radius: 0.5rem; }
 
 .g-ancha img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
+

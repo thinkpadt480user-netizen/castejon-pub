@@ -1,93 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pub Las Merindades - Castejón, Navarra</title>
-<meta name="description" content="Pinchos, bocatas, tapas y cervezas en Castejón, Navarra. C. las Merindades, 2. Tel. 948 77 08 16">
-<link rel="stylesheet" href="style.css">
+<title>Pub Las Merindades | Pinchos, bocatas y tapas en Castejón, Navarra</title>
+<meta name="description" content="Pub Las Merindades en Castejón (Navarra). Pinchos, bocatas, tapas y cervezas. Abierto hasta las 23:00. Llama al 948 77 08 16.">
+<meta name="theme-color" content="#0f3d2e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="saltar" href="#carta">Saltar al contenido</a>
+
 <header class="hero">
-<div class="hero-text">
-<h1>Pub Las Merindades</h1>
-<p>Pinchos, bocatas, tapas y buena cerveza en Castejón</p>
-<p class="rating">4,4 de 5 · 183 reseñas · 10-20 € por persona</p>
-<a class="btn" href="tel:+34948770816">Llamar: 948 77 08 16</a>
-</div>
+  <div class="hero__barra contenedor">
+    <span class="marca">Las Merindades</span>
+    <nav class="hero__nav" aria-label="Principal">
+      <a href="#carta">Carta</a>
+      <a href="#visita">Ven a vernos</a>
+    </nav>
+    <a class="enlace-tel" href="tel:+34948770816">948 77 08 16</a>
+  </div>
+
+  <div class="hero__cuerpo contenedor">
+    <h1 class="titulo">
+      <span class="titulo__kebab">Pub</span>
+      <span class="titulo__nombre">Las Merindades</span>
+    </h1>
+    <p class="lema">Pinchos, bocatas, tapas y buena cerveza. Buen trato y precios de siempre.</p>
+
+    <div class="botones">
+      <a class="boton boton--llamar" href="tel:+34948770816">Llamar al 948 77 08 16</a>
+      <a class="boton boton--mapa" href="https://www.google.com/maps/search/?api=1&amp;query=C.+las+Merindades+2+Castej%C3%B3n+Navarra" target="_blank" rel="noopener">Cómo llegar</a>
+    </div>
+
+    <ul class="datos-rapidos">
+      <li class="abierto"><span class="punto" aria-hidden="true"></span>Abierto hasta las 23:00</li>
+      <li>
+        <span class="estrellas" role="img" aria-label="4,4 de 5 estrellas">
+          <span class="estrellas__fondo" aria-hidden="true">★★★★★</span>
+          <span class="estrellas__relleno" aria-hidden="true">★★★★★</span>
+        </span>
+        4,4 · 183 reseñas en Google
+      </li>
+      <li>10-20 € por persona</li>
+    </ul>
+  </div>
 </header>
 
-<main>
-<section>
-<h2>Nuestra comida</h2>
-<div class="grid">
-<img src="img/p2.jpg" alt="Plato de comida" loading="lazy">
-<img src="img/p3.jpg" alt="Plato de comida" loading="lazy">
-<img src="img/p4.jpg" alt="Plato fresco" loading="lazy">
-<img src="img/p5.jpg" alt="Carne a la brasa" loading="lazy">
-<img src="img/p8.jpg" alt="Pizza" loading="lazy">
-</div>
-</section>
+<main id="contenido">
+  <section class="seccion carta" id="carta" aria-labelledby="t-carta">
+    <div class="contenedor">
+      <h2 id="t-carta">La carta</h2>
+      <p class="intro">Pregunta por los precios y los platos del día.</p>
 
-<section>
-<h2>El local</h2>
-<div class="grid grid-3">
-<img src="img/p1.jpg" alt="Interior del local" loading="lazy">
-<img src="img/p6.jpg" alt="Sala del local" loading="lazy">
-<img src="img/p7.jpg" alt="Barra del local" loading="lazy">
-</div>
-</section>
+      <div class="carta__rejilla">
+        <article class="categoria">
+          <h3>Pinchos y tapas</h3>
+          <ul class="platos">
+            <li><span class="plato">Pinchos variados</span></li>
+            <li><span class="plato">Foie</span></li>
+            <li><span class="plato">Bacalao al pil pil</span></li>
+            <li><span class="plato">Sepia</span></li>
+          </ul>
+        </article>
 
-<section>
-<h2>La carta</h2>
-<div class="menu">
-<div class="col">
-<h3>Pinchos y tapas</h3>
-<ul>
-<li><span>Pinchos variados</span></li>
-<li><span>Foie</span></li>
-<li><span>Bacalao al pil pil</span></li>
-<li><span>Sepia</span></li>
-</ul>
-</div>
-<div class="col">
-<h3>Bocatas</h3>
-<ul>
-<li><span>Bocata de bacon y queso</span></li>
-<li><span>Bocatas variados</span></li>
-</ul>
-</div>
-<div class="col">
-<h3>Platos</h3>
-<ul>
-<li><span>Pasta brick rellena de queso</span></li>
-<li><span>Magret de pato</span></li>
-</ul>
-</div>
-<div class="col">
-<h3>Bebidas</h3>
-<ul>
-<li><span>Variedad de cervezas</span></li>
-<li><span>Vinos de la Ribera de Navarra</span></li>
-</ul>
-</div>
-</div>
-<p class="note">Comer en el local o a domicilio. Pregunta por precios y platos del día.</p>
-</section>
+        <article class="categoria">
+          <h3>Bocatas</h3>
+          <ul class="platos">
+            <li><span class="plato">Bocata de bacon y queso</span></li>
+            <li><span class="plato">Bocatas variados</span></li>
+          </ul>
+        </article>
+
+        <article class="categoria">
+          <h3>Platos</h3>
+          <ul class="platos">
+            <li><span class="plato">Pasta brick rellena de queso</span></li>
+            <li><span class="plato">Magret de pato</span></li>
+          </ul>
+        </article>
+
+        <article class="categoria">
+          <h3>Bebidas</h3>
+          <ul class="platos">
+            <li><span class="plato">Variedad de cervezas</span></li>
+            <li><span class="plato">Vinos de la Ribera de Navarra</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="pedir">¿Quieres reservar o pedir? <a href="tel:+34948770816">Llama al 948 77 08 16</a>.</p>
+    </div>
+  </section>
+
+  <section class="seccion servicios" aria-labelledby="t-servicios">
+    <div class="contenedor">
+      <h2 id="t-servicios">Cómo lo quieres</h2>
+      <ul class="servicios__lista">
+        <li>
+          <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M8 40V20l16-12 16 12v20H8Z M19 40V28h10v12" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+          <h3>En el local</h3>
+          <p>Ambiente agradable y acogedor, ideal para grupos.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="12" cy="35" r="6" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="37" cy="35" r="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M12 35l8-16h12l5 16M20 19l-2-5h-5M27 19l4 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg>
+          <h3>A domicilio</h3>
+          <p>Te lo llevamos a casa. Pide por teléfono.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion galeria" aria-labelledby="t-galeria">
+    <div class="contenedor">
+      <h2 id="t-galeria">La comida y el local</h2>
+      <ul class="galeria__rejilla">
+        <li class="g-grande"><img src="img/p2.jpg" alt="Plato de la casa" width="900" height="600" loading="lazy"></li>
+        <li><img src="img/p3.jpg" alt="Plato de comida" width="900" height="600" loading="lazy"></li>
+        <li><img src="img/p5.jpg" alt="Carne a la brasa" width="900" height="600" loading="lazy"></li>
+        <li class="g-ancha"><img src="img/p1.jpg" alt="Interior del local" width="900" height="600" loading="lazy"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion opiniones" aria-labelledby="t-opiniones">
+    <div class="contenedor">
+      <h2 id="t-opiniones">Lo que dicen de nosotros</h2>
+
+      <div class="nota-global">
+        <p class="nota-global__numero">4,4</p>
+        <div>
+          <span class="estrellas estrellas--grande" role="img" aria-label="4,4 de 5 estrellas">
+            <span class="estrellas__fondo" aria-hidden="true">★★★★★</span>
+            <span class="estrellas__relleno" aria-hidden="true">★★★★★</span>
+          </span>
+          <p>183 reseñas en Google</p>
+        </div>
+      </div>
+
+      <ul class="resenas">
+        <li><blockquote><p>“Muy buenos los bocatas de bacon queso, 9/10.”</p><footer>Reseña en Google Maps</footer></blockquote></li>
+        <li><blockquote><p>“Muy rico el bacalao al pil pil y la sepia.”</p><footer>Reseña en Google Maps</footer></blockquote></li>
+        <li><blockquote><p>“Variedad de cervezas, buen trato.”</p><footer>Reseña en Google Maps</footer></blockquote></li>
+        <li><blockquote><p>“Muy buen restaurante. La atención estupenda, atentos y amables. Los platos a un precio económico. La relación calidad/precio estupenda.”</p><footer>Juan Andres, Local Guide</footer></blockquote></li>
+        <li><blockquote><p>“Comida de calidad y a buen precio. Trato exquisito. Los hermanos un encanto. Ideal para grupos.”</p><footer>Enjoy Pamplona, Local Guide</footer></blockquote></li>
+      </ul>
+
+      <p class="mas-resenas"><a href="https://www.google.com/maps/search/?api=1&amp;query=C.+las+Merindades+2+Castej%C3%B3n+Navarra" target="_blank" rel="noopener">Ver más reseñas en Google Maps</a></p>
+    </div>
+  </section>
+
+  <section class="seccion visita" id="visita" aria-labelledby="t-visita">
+    <div class="contenedor visita__rejilla">
+      <div class="visita__datos">
+        <h2 id="t-visita">Ven a vernos</h2>
+
+        <h3>Horario</h3>
+        <table class="horario">
+          <tbody>
+            <tr><th scope="row">Cierre</th><td>23:00</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Dirección</h3>
+        <address>
+          C. las Merindades, 2<br>
+          31590 Castejón, Navarra<br>
+          <span class="pluscode">Plus Code: 58C5+HH Castejón</span>
+        </address>
+
+        <h3>Teléfono</h3>
+        <p><a class="tel-grande" href="tel:+34948770816">948 77 08 16</a></p>
+
+        <a class="boton boton--mapa-oscuro" href="https://www.google.com/maps/search/?api=1&amp;query=C.+las+Merindades+2+Castej%C3%B3n+Navarra" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+
+      <div class="visita__mapa">
+        <iframe title="Mapa de Pub Las Merindades en Castejón" src="https://www.google.com/maps?q=C.+las+Merindades+2+Castej%C3%B3n+Navarra&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer>
-<h2>Cómo llegar</h2>
-<p>C. las Merindades, 2, 31590 Castejón, Navarra</p>
-<p>Abierto hasta las 23:00</p>
-<div class="map">
-<iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=C.+las+Merindades+2,+31590+Castej%C3%B3n,+Navarra&output=embed"></iframe>
-</div>
-<a class="btn alt" href="https://www.google.com/maps/dir/?api=1&destination=C.+las+Merindades+2,+31590+Castej%C3%B3n,+Navarra" target="_blank" rel="noopener">Abrir en Google Maps</a>
-<div class="phone">
-<p>Reservas y pedidos</p>
-<a class="tel" href="tel:+34948770816">948 77 08 16</a>
-</div>
+<footer class="pie">
+  <div class="contenedor pie__fila">
+    <p><strong>Pub Las Merindades</strong><br>C. las Merindades, 2, 31590 Castejón, Navarra</p>
+    <p>
+      <a href="tel:+34948770816">948 77 08 16</a><br>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=C.+las+Merindades+2+Castej%C3%B3n+Navarra" target="_blank" rel="noopener">Ver en Google Maps</a>
+    </p>
+  </div>
 </footer>
+
+<a class="llamar-fijo" href="tel:+34948770816">Llamar ahora</a>
 </body>
 </html>
